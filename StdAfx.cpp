@@ -4,5 +4,13 @@
 
 #include "stdafx.h"
 
+#ifdef _DEBUG
+#pragma comment(lib, "../../binD/cximage.lib")
+#pragma comment(lib, "../../binD/png.lib")
+#else
+#pragma comment(lib, "../../bin/cximage.lib")
+#pragma comment(lib, "../../bin/png.lib")
+#endif
+
 
 
